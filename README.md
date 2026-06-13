@@ -1,45 +1,103 @@
-Deskripsi Aplikasi
+# Aplikasi Blog Laravel
+
+---
+
+# Identitas Mahasiswa
+
+**Nama:** Alzainap Lariza k
+**NIM:** 240605110055
+
+---
+
+# Deskripsi Aplikasi
+
 Aplikasi Blog Laravel merupakan sistem manajemen konten (CMS) yang digunakan untuk mengelola artikel, penulis, dan kategori artikel. Aplikasi ini memiliki dua jenis halaman, yaitu:
 
-1. Halaman Administrator (CMS)
-2. Login dan Logout
-3. Kelola Penulis (CRUD)
-4. Kelola Kategori Artikel (CRUD)
-5. Kelola Artikel (CRUD)
-6. Halaman Pengunjung
-7. Menampilkan 5 artikel terbaru
-8. Menampilkan daftar kategori artikel
-9. Filter artikel berdasarkan kategori
-10.Menampilkan detail artikel
-11.Menampilkan artikel terkait berdasarkan kategori yang sama
-   Aplikasi dibangun menggunakan Framework Laravel dan database MySQL sesuai ketentuan UAS Pemrograman Web.
+## Halaman Administrator (CMS)
 
-Langkah Menjalankan Aplikasi
-Clone Repository
+- Login dan Logout
+- Kelola Penulis (CRUD)
+- Kelola Kategori Artikel (CRUD)
+- Kelola Artikel (CRUD)
+
+## Halaman Pengunjung
+
+- Menampilkan 5 artikel terbaru
+- Menampilkan daftar kategori artikel
+- Filter artikel berdasarkan kategori
+- Menampilkan detail artikel
+- Menampilkan artikel terkait berdasarkan kategori yang sama
+
+Aplikasi dibangun menggunakan Framework Laravel dan database MySQL sesuai ketentuan UAS Pemrograman Web.
+
+---
+
+# Langkah Menjalankan Aplikasi
+
+## 1. Clone Repository
+
+```bash
 git clone 
+```
 
-Masuk ke Folder Project
+## 2. Masuk ke Folder Project
+
+```bash
 cd aplikasi-blog-240605110055
+```
 
-Install Dependency
+## 3. Install Dependency
+
+```bash
 composer install
+```
 
-Salin File Konfigurasi
+## 4. Salin File Konfigurasi
+
+```bash
 cp .env.example .env
+```
 
-Generate Application Key
+## 5. Generate Application Key
+
+```bash
 php artisan key:generate
+```
 
-Atur Konfigurasi Database pada File .env
-Sesuaikan konfigurasi database MySQL yang digunakan.
+## 6. Atur Konfigurasi Database
 
-Jalankan Migrasi Database
+Buka file `.env` kemudian sesuaikan konfigurasi database MySQL yang digunakan.
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_blog
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+## 7. Jalankan Migrasi Database
+
+```bash
 php artisan migrate
+```
 
-Jalankan Aplikasi
+## 8. Jalankan Aplikasi
+
+```bash
 php artisan serve
+```
 
-Buka Browser
+## 9. Buka Browser
+
+```text
 http://localhost:8000
+```
 
-Video Demonstrasi
+---
+
+# Video Demonstrasi
+
+**Link YouTube:**  
+https://youtu.be/9ioCJh2AhUE?si=b3MIMXeN8oEkYhjH
